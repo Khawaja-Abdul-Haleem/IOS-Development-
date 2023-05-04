@@ -1,0 +1,44 @@
+As we all know that earlier to swift programming language developers used to do programming in Objective C language, this language is the legacy of the iOS development.
+
+
+When Swift language is launched it became a tough task for the developers to regenerate the code written in the Objective C language to Swift language.
+
+Apple knows that this may cause several issues and hence made Swift language work along with the legacy Objective C.
+
+
+Common Macros are:
+
+1. #Define:
+
+    In Objective C #define preprocessor is used to declare constants. The preprocessor macro #define is used in order to ease the code clarity.
+
+Suppose you are working with any dimension box, you define the dimensions of the box that is length and width. If later you decide to change any value for the box you would only have to change it in the #define instead of finding and replacing it on the whole project.
+
+When compiling, the preprocessor will replace all the defined names with the values in the code.
+
+2. #If:
+    We can define any code inside the #if and #elseif preprocessor macros for multiple targets to be called based on the set Compiler Flag for the project.
+    
+    #if FLAG1
+      // DO SOME STUFF
+    #elseif FLAG2
+     // DO SOME OTHER STUFF
+    #else
+     // DO ANY OTHER STUFF 
+    #endif
+    
+3. #Elseif:
+    #elseif preprocessor macro is used to call the macro which is different from the macro defined by the  #if
+
+4. #Else:
+    Do not forget to add #endif which symbolizes the end of the #if preprocessor.
+
+5. #If DEBUG:
+
+    This preprocessor macro is used to declare the environment of the application. This macro is used to declare the runtime environment of the application.
+    
+    #if DEBUG
+      print("App is in Debug mode")
+    #else
+      print("App is in production mode")
+ 
